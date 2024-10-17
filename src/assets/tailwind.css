@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    font-family: 'Manrope', sans-serif;
+    background-color: #f7f7f7;
+}
+
+@layer components {
+    .btnSSO a {
+        @apply border border-gray-400 rounded-lg px-3 py-2 hover:bg-Blue-Primary hover:text-white;
+    }
+
+    .btnSecondary {
+        @apply text-Blue-Primary border-2 border-Blue-Primary hover:bg-Blue-Primary hover:text-white rounded;
+    }
+    .btnPrimary {
+        @apply text-white bg-Blue-Primary border-2 hover:bg-transparent hover:border-Blue-Primary hover:text-Blue-Primary rounded;
+    }
+}
