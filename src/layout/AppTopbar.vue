@@ -15,7 +15,7 @@ const { onMenuToggle, toggleDarkMode, isDarkTheme } = useLayout();
             <div class="lg:hidden block">
                 <button class="layout-menu-button layout-topbar-action text-white pr-4" @click="onMenuToggle">
                     <!-- Conditional rendering for the icon -->
-                    <i class="pi pi-arrow-right" style="font-size: 24px"></i>
+                    <i class="pi pi-arrow-circle-right" style="font-size: 20px"></i>
                 </button>
             </div>
             <router-link to="/" class="layout-topbar-logo">
@@ -35,10 +35,9 @@ const { onMenuToggle, toggleDarkMode, isDarkTheme } = useLayout();
                 <div class="flex gap-4 items-center">
                     <div class="relative">
                         <!-- Notification Button -->
-                        <button type="button" class="layout-topbar-action" @click="showNotification">
+                        <button type="button" class="mt-1" @click="showNotification">
                             <div class="">
-                                <i class="pi pi-bell"></i>
-                                <span class="text-gray-700 font-medium">Notification</span>
+                                <i class="pi pi-bell" style="font-size: 18px"></i>
 
                                 <!-- Red dot indicator -->
                             </div>
